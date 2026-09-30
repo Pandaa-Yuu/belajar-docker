@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    container_name: web-2405005
+
+    ports:
+      - "9005:80"
+
+    volumes:
+      - ./src:/var/www/html
